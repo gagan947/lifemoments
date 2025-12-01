@@ -1,0 +1,2617 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+
+img {
+    max-inline-size: 100%;
+    border: 0 none;
+    vertical-align: middle
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none
+}
+
+:focus,
+:active,
+.active {
+    outline: 0 none
+}
+
+button,
+input[type='submit'],
+input[type='reset'],
+input[type='button'] {
+    margin-block-end: 0;
+    font-size: inherit;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    text-decoration: none;
+    line-height: 1.42857143;
+    border: 0 none
+}
+
+button:hover,
+input[type='submit']:hover,
+input[type='reset']:hover,
+input[type='button']:hover {
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear
+}
+
+button:active,
+button.active,
+input[type='submit']:active,
+input[type='submit'].active,
+input[type='reset']:active,
+input[type='reset'].active,
+input[type='button']:active,
+input[type='button'].active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none
+}
+
+button::-moz-focus-inner,
+input[type='submit']::-moz-focus-inner,
+input[type='reset']::-moz-focus-inner,
+input[type='button']::-moz-focus-inner {
+    border: none;
+    padding: 0
+}
+
+button.disabled,
+button[disabled],
+button fieldset[disabled],
+input[type='submit'].disabled,
+input[type='submit'][disabled],
+input[type='submit'] fieldset[disabled],
+input[type='reset'].disabled,
+input[type='reset'][disabled],
+input[type='reset'] fieldset[disabled],
+input[type='button'].disabled,
+input[type='button'][disabled],
+input[type='button'] fieldset[disabled],
+input.disabled,
+input[disabled],
+input fieldset[disabled],
+textarea.disabled,
+textarea[disabled],
+textarea fieldset[disabled],
+select.disabled,
+select[disabled],
+select fieldset[disabled] {
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    opacity: 0.65;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none
+}
+
+input,
+textarea,
+select {
+    border: 1px solid #ccc;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    padding-inline-start: 5px;
+    padding-inline-end: 5px;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit
+}
+
+textarea {
+    resize: none;
+    height: 110px;
+    display: block
+}
+
+input[type='radio'],
+input[type='file'],
+input[type='checkbox'] {
+    padding: 0;
+    border: 0 none;
+    width: auto
+}
+
+select {
+    background: #fff;
+    height: 39px;
+    padding-inline-end: 0
+}
+
+select[multiple] {
+    height: 75px;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    padding-inline-start: 5px;
+    padding-inline-end: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%
+}
+
+tr {
+    vertical-align: middle
+}
+
+noscript {
+    height: 100%
+}
+
+.zpbutton.zpbutton-type-primary,
+button.zpbutton-type-primary,
+input[type=submit].zpbutton-type-primary,
+input[type=button].zpbutton-type-primary {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: normal;
+    border: 0 none;
+    line-height: 1.42857143;
+    letter-spacing: normal
+}
+
+.zpbutton.zpbutton-type-primary.zpbutton-outline,
+button.zpbutton-type-primary.zpbutton-outline,
+input[type=submit].zpbutton-type-primary.zpbutton-outline,
+input[type=button].zpbutton-type-primary.zpbutton-outline {
+    border: 1px solid
+}
+
+.zpbutton.zpbutton-type-secondary,
+button.zpbutton-type-secondary,
+input[type=submit].zpbutton-type-secondary,
+input[type=button].zpbutton-type-secondary {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: normal;
+    border: 0 none;
+    line-height: 1.42857143;
+    letter-spacing: normal
+}
+
+.zpbutton.zpbutton-type-secondary.zpbutton-outline,
+button.zpbutton-type-secondary.zpbutton-outline,
+input[type=submit].zpbutton-type-secondary.zpbutton-outline,
+input[type=button].zpbutton-type-secondary.zpbutton-outline {
+    border: 1px solid
+}
+
+.zpbutton.zpbutton-type-link,
+button.zpbutton-type-link,
+input[type=submit].zpbutton-type-link,
+input[type=button].zpbutton-type-link {
+    background: transparent;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+    border: 0 none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: normal;
+    line-height: 1.42857143;
+    letter-spacing: normal
+}
+
+.zpbutton.zpbutton-type-link.disabled:hover,
+button.zpbutton-type-link.disabled:hover,
+input[type=submit].zpbutton-type-link.disabled:hover,
+input[type=button].zpbutton-type-link.disabled:hover {
+    background: transparent
+}
+
+.zpbutton.zpbutton-type-primary,
+button.zpbutton-type-primary,
+input[type=submit].zpbutton-type-primary,
+input[type=button].zpbutton-type-primary {
+    background: #4CB5AB;
+    color: #ffffff;
+    border-color: transparent
+}
+
+.zpbutton.zpbutton-type-primary.zpbutton-outline,
+button.zpbutton-type-primary.zpbutton-outline,
+input[type=submit].zpbutton-type-primary.zpbutton-outline,
+input[type=button].zpbutton-type-primary.zpbutton-outline {
+    background: transparent;
+    color: #4CB5AB;
+    border-color: #4CB5AB
+}
+
+.zpbutton.zpbutton-type-primary.zpbutton-outline.disabled:hover,
+button.zpbutton-type-primary.zpbutton-outline.disabled:hover,
+input[type=submit].zpbutton-type-primary.zpbutton-outline.disabled:hover,
+input[type=button].zpbutton-type-primary.zpbutton-outline.disabled:hover {
+    background: transparent;
+    color: #ffffff;
+    border-color: #4CB5AB
+}
+
+.zpbutton.zpbutton-type-primary.zpbutton-outline:hover,
+button.zpbutton-type-primary.zpbutton-outline:hover,
+input[type=submit].zpbutton-type-primary.zpbutton-outline:hover,
+input[type=button].zpbutton-type-primary.zpbutton-outline:hover {
+    background: #4CB5AB;
+    color: #ffffff;
+    border-color: #4CB5AB
+}
+
+.zpbutton.zpbutton-type-primary:hover,
+button.zpbutton-type-primary:hover,
+input[type=submit].zpbutton-type-primary:hover,
+input[type=button].zpbutton-type-primary:hover {
+    background: #3c928a;
+    color: #ffffff;
+    border-color: transparent
+}
+
+.zpbutton.zpbutton-type-primary.disabled:hover,
+button.zpbutton-type-primary.disabled:hover,
+input[type=submit].zpbutton-type-primary.disabled:hover,
+input[type=button].zpbutton-type-primary.disabled:hover {
+    background: #3c928a;
+    color: #ffffff
+}
+
+.zpbutton.zpbutton-type-secondary,
+button.zpbutton-type-secondary,
+input[type=submit].zpbutton-type-secondary,
+input[type=button].zpbutton-type-secondary {
+    background: #00376E;
+    color: #ffffff;
+    border-color: transparent
+}
+
+.zpbutton.zpbutton-type-secondary.zpbutton-outline,
+button.zpbutton-type-secondary.zpbutton-outline,
+input[type=submit].zpbutton-type-secondary.zpbutton-outline,
+input[type=button].zpbutton-type-secondary.zpbutton-outline {
+    background: transparent;
+    color: #00376E;
+    border-color: #00376E
+}
+
+.zpbutton.zpbutton-type-secondary.zpbutton-outline.disabled:hover,
+button.zpbutton-type-secondary.zpbutton-outline.disabled:hover,
+input[type=submit].zpbutton-type-secondary.zpbutton-outline.disabled:hover,
+input[type=button].zpbutton-type-secondary.zpbutton-outline.disabled:hover {
+    background: transparent;
+    color: #ffffff;
+    border-color: #00376E
+}
+
+.zpbutton.zpbutton-type-secondary.zpbutton-outline:hover,
+button.zpbutton-type-secondary.zpbutton-outline:hover,
+input[type=submit].zpbutton-type-secondary.zpbutton-outline:hover,
+input[type=button].zpbutton-type-secondary.zpbutton-outline:hover {
+    background: #001e3b;
+    color: #ffffff;
+    border-color: #00376E
+}
+
+.zpbutton.zpbutton-type-secondary:hover,
+button.zpbutton-type-secondary:hover,
+input[type=submit].zpbutton-type-secondary:hover,
+input[type=button].zpbutton-type-secondary:hover {
+    background: #001e3b;
+    color: #ffffff;
+    border-color: transparent
+}
+
+.zpbutton.zpbutton-type-secondary.disabled:hover,
+button.zpbutton-type-secondary.disabled:hover,
+input[type=submit].zpbutton-type-secondary.disabled:hover,
+input[type=button].zpbutton-type-secondary.disabled:hover {
+    background: #001e3b;
+    color: #ffffff
+}
+
+.zpbutton.zpbutton-type-link,
+button.zpbutton-type-link,
+input[type=submit].zpbutton-type-link,
+input[type=button].zpbutton-type-link {
+    color: #4CB5AB
+}
+
+.zpbutton.zpbutton-type-link.disabled:hover,
+button.zpbutton-type-link.disabled:hover,
+input[type=submit].zpbutton-type-link.disabled:hover,
+input[type=button].zpbutton-type-link.disabled:hover {
+    background: transparent;
+    color: #3c928a
+}
+
+.zpbutton.zpbutton-type-link:hover,
+button.zpbutton-type-link:hover,
+input[type=submit].zpbutton-type-link:hover,
+input[type=button].zpbutton-type-link:hover {
+    color: #3c928a
+}
+
+.zpdark-section .zpbutton.zpbutton-type-primary,
+.zpdark-section button.zpbutton-type-primary,
+.zpdark-section input[type=submit].zpbutton-type-primary,
+.zpdark-section input[type=button].zpbutton-type-primary {
+    background: #ffffff;
+    color: #4CB5AB;
+    border-color: transparent
+}
+
+.zpdark-section .zpbutton.zpbutton-type-primary.zpbutton-outline,
+.zpdark-section button.zpbutton-type-primary.zpbutton-outline,
+.zpdark-section input[type=submit].zpbutton-type-primary.zpbutton-outline,
+.zpdark-section input[type=button].zpbutton-type-primary.zpbutton-outline {
+    background: transparent;
+    color: #ffffff;
+    border-color: #ffffff
+}
+
+.zpdark-section .zpbutton.zpbutton-type-primary.zpbutton-outline.disabled:hover,
+.zpdark-section button.zpbutton-type-primary.zpbutton-outline.disabled:hover,
+.zpdark-section input[type=submit].zpbutton-type-primary.zpbutton-outline.disabled:hover,
+.zpdark-section input[type=button].zpbutton-type-primary.zpbutton-outline.disabled:hover {
+    background: transparent;
+    color: #4CB5AB;
+    border-color: #ffffff
+}
+
+.zpdark-section .zpbutton.zpbutton-type-primary.zpbutton-outline:hover,
+.zpdark-section button.zpbutton-type-primary.zpbutton-outline:hover,
+.zpdark-section input[type=submit].zpbutton-type-primary.zpbutton-outline:hover,
+.zpdark-section input[type=button].zpbutton-type-primary.zpbutton-outline:hover {
+    background: #ffffff;
+    color: #4CB5AB;
+    border-color: #ffffff
+}
+
+.zpdark-section .zpbutton.zpbutton-type-primary:hover,
+.zpdark-section button.zpbutton-type-primary:hover,
+.zpdark-section input[type=submit].zpbutton-type-primary:hover,
+.zpdark-section input[type=button].zpbutton-type-primary:hover {
+    background: #e6e6e6;
+    color: #4CB5AB;
+    border-color: transparent
+}
+
+.zpdark-section .zpbutton.zpbutton-type-primary.disabled:hover,
+.zpdark-section button.zpbutton-type-primary.disabled:hover,
+.zpdark-section input[type=submit].zpbutton-type-primary.disabled:hover,
+.zpdark-section input[type=button].zpbutton-type-primary.disabled:hover {
+    background: #e6e6e6;
+    color: #4CB5AB
+}
+
+.zpdark-section .zpbutton.zpbutton-type-secondary,
+.zpdark-section button.zpbutton-type-secondary,
+.zpdark-section input[type=submit].zpbutton-type-secondary,
+.zpdark-section input[type=button].zpbutton-type-secondary {
+    background: #00376E;
+    color: #ffffff;
+    border-color: transparent
+}
+
+.zpdark-section .zpbutton.zpbutton-type-secondary.zpbutton-outline,
+.zpdark-section button.zpbutton-type-secondary.zpbutton-outline,
+.zpdark-section input[type=submit].zpbutton-type-secondary.zpbutton-outline,
+.zpdark-section input[type=button].zpbutton-type-secondary.zpbutton-outline {
+    background: transparent;
+    color: #00376E;
+    border-color: #00376E
+}
+
+.zpdark-section .zpbutton.zpbutton-type-secondary.zpbutton-outline.disabled:hover,
+.zpdark-section button.zpbutton-type-secondary.zpbutton-outline.disabled:hover,
+.zpdark-section input[type=submit].zpbutton-type-secondary.zpbutton-outline.disabled:hover,
+.zpdark-section input[type=button].zpbutton-type-secondary.zpbutton-outline.disabled:hover {
+    background: transparent;
+    color: #ffffff;
+    border-color: #00376E
+}
+
+.zpdark-section .zpbutton.zpbutton-type-secondary.zpbutton-outline:hover,
+.zpdark-section button.zpbutton-type-secondary.zpbutton-outline:hover,
+.zpdark-section input[type=submit].zpbutton-type-secondary.zpbutton-outline:hover,
+.zpdark-section input[type=button].zpbutton-type-secondary.zpbutton-outline:hover {
+    background: #00376E;
+    color: #ffffff;
+    border-color: #00376E
+}
+
+.zpdark-section .zpbutton.zpbutton-type-secondary:hover,
+.zpdark-section button.zpbutton-type-secondary:hover,
+.zpdark-section input[type=submit].zpbutton-type-secondary:hover,
+.zpdark-section input[type=button].zpbutton-type-secondary:hover {
+    background: #001e3b;
+    color: #ffffff;
+    border-color: transparent
+}
+
+.zpdark-section .zpbutton.zpbutton-type-secondary.disabled:hover,
+.zpdark-section button.zpbutton-type-secondary.disabled:hover,
+.zpdark-section input[type=submit].zpbutton-type-secondary.disabled:hover,
+.zpdark-section input[type=button].zpbutton-type-secondary.disabled:hover {
+    background: #001e3b;
+    color: #ffffff
+}
+
+.zpdark-section .zpbutton.zpbutton-type-link,
+.zpdark-section button.zpbutton-type-link,
+.zpdark-section input[type=submit].zpbutton-type-link,
+.zpdark-section input[type=button].zpbutton-type-link {
+    color: #ffffff
+}
+
+.zpdark-section .zpbutton.zpbutton-type-link.disabled:hover,
+.zpdark-section button.zpbutton-type-link.disabled:hover,
+.zpdark-section input[type=submit].zpbutton-type-link.disabled:hover,
+.zpdark-section input[type=button].zpbutton-type-link.disabled:hover {
+    background: transparent;
+    color: #e6e6e6
+}
+
+.zpdark-section .zpbutton.zpbutton-type-link:hover,
+.zpdark-section button.zpbutton-type-link:hover,
+.zpdark-section input[type=submit].zpbutton-type-link:hover,
+.zpdark-section input[type=button].zpbutton-type-link:hover {
+    color: #e6e6e6
+}
+
+body {
+    color: #5981A9;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+h1:before,
+h1:after {
+    background: #00376E
+}
+
+h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+h2:before,
+h2:after {
+    background: #00376E
+}
+
+h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+h3:before,
+h3:after {
+    background: #00376E
+}
+
+h4 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+h4:before,
+h4:after {
+    background: #00376E
+}
+
+h5 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+h5:before,
+h5:after {
+    background: #00376E
+}
+
+h6 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+h6:before,
+h6:after {
+    background: #00376E
+}
+
+body {
+    color: #5981A9
+}
+
+body .zpdark-section {
+    color: #ffffff
+}
+
+a {
+    color: #4CB5AB
+}
+
+a:hover {
+    color: #3c928a
+}
+
+.zpdark-section a {
+    color: #F5F460
+}
+
+.zpdark-section a:hover {
+    color: #f2f130
+}
+
+h1 {
+    color: #00376E
+}
+
+h1:before,
+h1:after {
+    background: #00376E
+}
+
+h2 {
+    color: #00376E
+}
+
+h2:before,
+h2:after {
+    background: #00376E
+}
+
+h3 {
+    color: #00376E
+}
+
+h3:before,
+h3:after {
+    background: #00376E
+}
+
+h4 {
+    color: #00376E
+}
+
+h4:before,
+h4:after {
+    background: #00376E
+}
+
+h5 {
+    color: #00376E
+}
+
+h5:before,
+h5:after {
+    background: #00376E
+}
+
+h6 {
+    color: #00376E
+}
+
+h6:before,
+h6:after {
+    background: #00376E
+}
+
+.zpdark-section h1 {
+    color: #ffffff
+}
+
+.zpdark-section h1:before,
+.zpdark-section h1:after {
+    background: #ffffff
+}
+
+.zpdark-section h2 {
+    color: #ffffff
+}
+
+.zpdark-section h2:before,
+.zpdark-section h2:after {
+    background: #ffffff
+}
+
+.zpdark-section h3 {
+    color: #ffffff
+}
+
+.zpdark-section h3:before,
+.zpdark-section h3:after {
+    background: #ffffff
+}
+
+.zpdark-section h4 {
+    color: #ffffff
+}
+
+.zpdark-section h4:before,
+.zpdark-section h4:after {
+    background: #ffffff
+}
+
+.zpdark-section h5 {
+    color: #ffffff
+}
+
+.zpdark-section h5:before,
+.zpdark-section h5:after {
+    background: #ffffff
+}
+
+.zpdark-section h6 {
+    color: #ffffff
+}
+
+.zpdark-section h6:before,
+.zpdark-section h6:after {
+    background: #ffffff
+}
+
+.zpdivider-container.zpdivider-text .zpdivider-common {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    line-height: normal;
+    letter-spacing: normal
+}
+
+.zpdivider-container .zpdivider-common:after,
+.zpdivider-container .zpdivider-common:before {
+    border-color: #E7E7E7
+}
+
+.zpdivider-container.zpdivider-icon.zpdivider-style-border .zpdivider-common,
+.zpdivider-container.zpdivider-icon.zpdivider-style-roundcorner .zpdivider-common,
+.zpdivider-container.zpdivider-icon.zpdivider-style-circle .zpdivider-common {
+    border-color: #E7E7E7
+}
+
+.zpdivider-container.zpdivider-icon.zpdivider-style-bgfill .zpdivider-common,
+.zpdivider-container.zpdivider-icon.zpdivider-style-roundcorner-fill .zpdivider-common,
+.zpdivider-container.zpdivider-icon.zpdivider-style-circle-fill .zpdivider-common {
+    background: #4CB5AB
+}
+
+.zpdivider-container.zpdivider-icon.zpdivider-style-bgfill .zpdivider-common svg,
+.zpdivider-container.zpdivider-icon.zpdivider-style-roundcorner-fill .zpdivider-common svg,
+.zpdivider-container.zpdivider-icon.zpdivider-style-circle-fill .zpdivider-common svg {
+    fill: #ffffff
+}
+
+.zpdivider-container.zpdivider-icon .zpdivider-common svg {
+    fill: #4CB5AB
+}
+
+.zpdivider-container.zpdivider-text.zpdivider-style-border .zpdivider-common,
+.zpdivider-container.zpdivider-text.zpdivider-style-roundcorner .zpdivider-common,
+.zpdivider-container.zpdivider-text.zpdivider-style-circle .zpdivider-common {
+    border-color: #E7E7E7
+}
+
+.zpdivider-container.zpdivider-text.zpdivider-style-bgfill .zpdivider-common,
+.zpdivider-container.zpdivider-text.zpdivider-style-roundcorner-fill .zpdivider-common,
+.zpdivider-container.zpdivider-text.zpdivider-style-circle-fill .zpdivider-common {
+    background: #4CB5AB;
+    color: #ffffff
+}
+
+.zpdivider-container.zpdivider-text .zpdivider-common {
+    color: #4CB5AB
+}
+
+.zpdark-section .zpdivider-container .zpdivider-common:after,
+.zpdark-section .zpdivider-container .zpdivider-common:before {
+    border-color: RGBA(255, 255, 255, 0.7)
+}
+
+.zpdark-section .zpdivider-container.zpdivider-icon.zpdivider-style-border .zpdivider-common,
+.zpdark-section .zpdivider-container.zpdivider-icon.zpdivider-style-roundcorner .zpdivider-common,
+.zpdark-section .zpdivider-container.zpdivider-icon.zpdivider-style-circle .zpdivider-common {
+    border-color: RGBA(255, 255, 255, 0.7)
+}
+
+.zpdark-section .zpdivider-container.zpdivider-icon.zpdivider-style-bgfill .zpdivider-common,
+.zpdark-section .zpdivider-container.zpdivider-icon.zpdivider-style-roundcorner-fill .zpdivider-common,
+.zpdark-section .zpdivider-container.zpdivider-icon.zpdivider-style-circle-fill .zpdivider-common {
+    background: #ffffff
+}
+
+.zpdark-section .zpdivider-container.zpdivider-icon.zpdivider-style-bgfill .zpdivider-common svg,
+.zpdark-section .zpdivider-container.zpdivider-icon.zpdivider-style-roundcorner-fill .zpdivider-common svg,
+.zpdark-section .zpdivider-container.zpdivider-icon.zpdivider-style-circle-fill .zpdivider-common svg {
+    fill: #4CB5AB
+}
+
+.zpdark-section .zpdivider-container.zpdivider-icon .zpdivider-common svg {
+    fill: #ffffff
+}
+
+.zpdark-section .zpdivider-container.zpdivider-text.zpdivider-style-border .zpdivider-common,
+.zpdark-section .zpdivider-container.zpdivider-text.zpdivider-style-roundcorner .zpdivider-common,
+.zpdark-section .zpdivider-container.zpdivider-text.zpdivider-style-circle .zpdivider-common {
+    border-color: RGBA(255, 255, 255, 0.7)
+}
+
+.zpdark-section .zpdivider-container.zpdivider-text.zpdivider-style-bgfill .zpdivider-common,
+.zpdark-section .zpdivider-container.zpdivider-text.zpdivider-style-roundcorner-fill .zpdivider-common,
+.zpdark-section .zpdivider-container.zpdivider-text.zpdivider-style-circle-fill .zpdivider-common {
+    background: #ffffff;
+    color: #4CB5AB
+}
+
+.zpdark-section .zpdivider-container.zpdivider-text .zpdivider-common {
+    color: #ffffff
+}
+
+.zpicon-common svg {
+    fill: #4CB5AB
+}
+
+.zpicon-common.zpicon-style-bgfill,
+.zpicon-common.zpicon-style-circle-fill,
+.zpicon-common.zpicon-style-roundcorner-fill {
+    background: #4CB5AB
+}
+
+.zpicon-common.zpicon-style-bgfill svg,
+.zpicon-common.zpicon-style-circle-fill svg,
+.zpicon-common.zpicon-style-roundcorner-fill svg {
+    fill: #ffffff
+}
+
+.zpicon-common.zpicon-style-border,
+.zpicon-common.zpicon-style-circle,
+.zpicon-common.zpicon-style-roundcorner {
+    border-color: #E7E7E7
+}
+
+.zpicon-common.zpicon-style-border svg,
+.zpicon-common.zpicon-style-circle svg,
+.zpicon-common.zpicon-style-roundcorner svg {
+    fill: #4CB5AB
+}
+
+.zpdark-section .zpicon-common svg {
+    fill: #ffffff
+}
+
+.zpdark-section .zpicon-common.zpicon-style-bgfill,
+.zpdark-section .zpicon-common.zpicon-style-circle-fill,
+.zpdark-section .zpicon-common.zpicon-style-roundcorner-fill {
+    background: #ffffff
+}
+
+.zpdark-section .zpicon-common.zpicon-style-bgfill svg,
+.zpdark-section .zpicon-common.zpicon-style-circle-fill svg,
+.zpdark-section .zpicon-common.zpicon-style-roundcorner-fill svg {
+    fill: #4CB5AB
+}
+
+.zpdark-section .zpicon-common.zpicon-style-border,
+.zpdark-section .zpicon-common.zpicon-style-circle,
+.zpdark-section .zpicon-common.zpicon-style-roundcorner {
+    border-color: #ffffff
+}
+
+.zpdark-section .zpicon-common.zpicon-style-border svg,
+.zpdark-section .zpicon-common.zpicon-style-circle svg,
+.zpdark-section .zpicon-common.zpicon-style-roundcorner svg {
+    fill: #ffffff
+}
+
+.zptabelem-inner-container.zptabs-style-01.zptab-type-01 .zptab,
+.zptabelem-inner-container.zptabs-style-01.zptab-type-02 .zptab,
+.zptabelem-inner-container.zptabs-style-01.zptab-type-03 .zptab {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zptabelem-inner-container.zptabs-style-02.zptab-type-01 .zptab,
+.zptabelem-inner-container.zptabs-style-02.zptab-type-02 .zptab,
+.zptabelem-inner-container.zptabs-style-02.zptab-type-03 .zptab {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zptabelem-inner-container.zptabs-style-01.zptab-type-01 .zptab,
+.zptabelem-inner-container.zptabs-style-01.zptab-type-02 .zptab,
+.zptabelem-inner-container.zptabs-style-01.zptab-type-03 .zptab {
+    border-color: transparent;
+    background: #ffffff;
+    color: #00376E
+}
+
+@media all and (min-width: 768px) {
+
+    .zptabelem-inner-container.zptabs-style-01.zptab-type-01 .zptab,
+    .zptabelem-inner-container.zptabs-style-01.zptab-type-02 .zptab,
+    .zptabelem-inner-container.zptabs-style-01.zptab-type-03 .zptab {
+        border-color: #E7E7E7
+    }
+}
+
+.zptabelem-inner-container.zptabs-style-01.zptab-type-01 .zptab.zptab-active,
+.zptabelem-inner-container.zptabs-style-01.zptab-type-01 .zptab:hover,
+.zptabelem-inner-container.zptabs-style-01.zptab-type-02 .zptab.zptab-active,
+.zptabelem-inner-container.zptabs-style-01.zptab-type-02 .zptab:hover,
+.zptabelem-inner-container.zptabs-style-01.zptab-type-03 .zptab.zptab-active,
+.zptabelem-inner-container.zptabs-style-01.zptab-type-03 .zptab:hover {
+    background: #4CB5AB;
+    color: #ffffff;
+    border-color: #4CB5AB
+}
+
+.zptabelem-inner-container.zptabs-style-01.zptab-type-01 .zptabs-content-container .zptab-content,
+.zptabelem-inner-container.zptabs-style-01.zptab-type-02 .zptabs-content-container .zptab-content,
+.zptabelem-inner-container.zptabs-style-01.zptab-type-03 .zptabs-content-container .zptab-content {
+    border-color: #E7E7E7;
+    background: #ffffff
+}
+
+.zptabelem-inner-container.zptabs-style-01.zptab-type-02 .zptabs-content-container .zptab-content,
+.zptabelem-inner-container.zptabs-style-01.zptab-type-03 .zptabs-content-container .zptab-content {
+    background: transparent;
+    border-color: transparent
+}
+
+.zptabelem-inner-container.zptabs-style-02.zptab-type-01 .zptab {
+    color: #00376E;
+    background: #ffffff
+}
+
+@media all and (min-width: 768px) {
+    .zptabelem-inner-container.zptabs-style-02.zptab-type-01 .zptab {
+        background: transparent
+    }
+}
+
+.zptabelem-inner-container.zptabs-style-02.zptab-type-01 .zptab.zptab-active {
+    background: #4CB5AB;
+    color: #ffffff
+}
+
+.zptabelem-inner-container.zptabs-style-02.zptab-type-01 .zptab.zptab-active:hover {
+    color: #ffffff
+}
+
+.zptabelem-inner-container.zptabs-style-02.zptab-type-01 .zptab:hover {
+    color: #4CB5AB
+}
+
+.zptabelem-inner-container.zptabs-style-02.zptab-type-01 .zptabs-content-container .zptab-content {
+    border-color: #4CB5AB
+}
+
+.zptabelem-inner-container.zptabs-style-02.zptab-type-02 .zptab {
+    color: #00376E;
+    border-block-end-color: #00376E
+}
+
+.zptabelem-inner-container.zptabs-style-02.zptab-type-02 .zptab.zptab-active {
+    color: #4CB5AB;
+    border-color: #4CB5AB
+}
+
+.zptabelem-inner-container.zptabs-style-02.zptab-type-02 .zptab.zptab-active:after {
+    background: #4CB5AB
+}
+
+.zptabelem-inner-container.zptabs-style-02.zptab-type-02 .zptab:hover {
+    color: #4CB5AB
+}
+
+.zptabelem-inner-container.zptabs-style-02.zptab-type-02 .zptabs-content-container .zptab-content {
+    border-block-start-color: #4CB5AB
+}
+
+.zptabelem-inner-container.zptabs-style-02.zptab-type-03 .zptab {
+    color: #00376E;
+    border-block-end-color: #00376E
+}
+
+.zptabelem-inner-container.zptabs-style-02.zptab-type-03 .zptab.zptab-active {
+    color: #4CB5AB;
+    border-color: #4CB5AB
+}
+
+.zptabelem-inner-container.zptabs-style-02.zptab-type-03 .zptab.zptab-active:after {
+    border-block-start-color: #4CB5AB
+}
+
+.zptabelem-inner-container.zptabs-style-02.zptab-type-03 .zptab:hover {
+    color: #4CB5AB
+}
+
+.zptabelem-inner-container.zptabs-style-02.zptab-type-03 .zptabs-content-container .zptab-content {
+    border-block-start-color: #4CB5AB
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-01.zptab-type-01 .zptab,
+.zpdark-section .zptabelem-inner-container.zptabs-style-01.zptab-type-02 .zptab,
+.zpdark-section .zptabelem-inner-container.zptabs-style-01.zptab-type-03 .zptab {
+    border-color: transparent;
+    background: RGBA(255, 255, 255, 0.25);
+    color: #ffffff
+}
+
+@media all and (min-width: 768px) {
+
+    .zpdark-section .zptabelem-inner-container.zptabs-style-01.zptab-type-01 .zptab,
+    .zpdark-section .zptabelem-inner-container.zptabs-style-01.zptab-type-02 .zptab,
+    .zpdark-section .zptabelem-inner-container.zptabs-style-01.zptab-type-03 .zptab {
+        border-color: RGBA(255, 255, 255, 0.25)
+    }
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-01.zptab-type-01 .zptab.zptab-active,
+.zpdark-section .zptabelem-inner-container.zptabs-style-01.zptab-type-01 .zptab:hover,
+.zpdark-section .zptabelem-inner-container.zptabs-style-01.zptab-type-02 .zptab.zptab-active,
+.zpdark-section .zptabelem-inner-container.zptabs-style-01.zptab-type-02 .zptab:hover,
+.zpdark-section .zptabelem-inner-container.zptabs-style-01.zptab-type-03 .zptab.zptab-active,
+.zpdark-section .zptabelem-inner-container.zptabs-style-01.zptab-type-03 .zptab:hover {
+    background: #ffffff;
+    color: #00376E;
+    border-color: #ffffff
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-01.zptab-type-01 .zptabs-content-container .zptab-content,
+.zpdark-section .zptabelem-inner-container.zptabs-style-01.zptab-type-02 .zptabs-content-container .zptab-content,
+.zpdark-section .zptabelem-inner-container.zptabs-style-01.zptab-type-03 .zptabs-content-container .zptab-content {
+    border-color: RGBA(255, 255, 255, 0.25);
+    background: RGBA(255, 255, 255, 0.15)
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-01.zptab-type-02 .zptabs-content-container .zptab-content,
+.zpdark-section .zptabelem-inner-container.zptabs-style-01.zptab-type-03 .zptabs-content-container .zptab-content {
+    background: transparent;
+    border-color: transparent
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-02.zptab-type-01 .zptab {
+    color: #ffffff;
+    background: RGBA(255, 255, 255, 0.25)
+}
+
+@media all and (min-width: 768px) {
+    .zpdark-section .zptabelem-inner-container.zptabs-style-02.zptab-type-01 .zptab {
+        background: transparent
+    }
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-02.zptab-type-01 .zptab.zptab-active {
+    background: #ffffff;
+    color: #00376E
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-02.zptab-type-01 .zptab.zptab-active:hover {
+    color: #00376E
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-02.zptab-type-01 .zptab:hover {
+    color: #ffffff
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-02.zptab-type-01 .zptabs-content-container .zptab-content {
+    border-color: #ffffff
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-02.zptab-type-02 .zptab {
+    color: #ffffff;
+    border-block-end-color: #ffffff
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-02.zptab-type-02 .zptab.zptab-active {
+    color: #ffffff;
+    border-color: #ffffff
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-02.zptab-type-02 .zptab.zptab-active:after {
+    background: #ffffff
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-02.zptab-type-02 .zptab:hover {
+    color: #ffffff
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-02.zptab-type-02 .zptabs-content-container .zptab-content {
+    border-block-start-color: #ffffff
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-02.zptab-type-03 .zptab {
+    color: #ffffff;
+    border-block-end-color: #ffffff
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-02.zptab-type-03 .zptab.zptab-active {
+    color: #ffffff;
+    border-color: #ffffff
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-02.zptab-type-03 .zptab.zptab-active:after {
+    border-block-start-color: #ffffff
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-02.zptab-type-03 .zptab:hover {
+    color: #ffffff
+}
+
+.zpdark-section .zptabelem-inner-container.zptabs-style-02.zptab-type-03 .zptabs-content-container .zptab-content {
+    border-block-start-color: #ffffff
+}
+
+.zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-left,
+.zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-right,
+.zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-left,
+.zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-right,
+.zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-left,
+.zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-right,
+.zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-left,
+.zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-right,
+.zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-left,
+.zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-right,
+.zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-left,
+.zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-right,
+.zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-left,
+.zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-right,
+.zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-left,
+.zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-right {
+    background: #ebebeb
+}
+
+.zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-left:hover,
+.zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-right:hover,
+.zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-left:hover,
+.zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-right:hover,
+.zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-left:hover,
+.zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-right:hover,
+.zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-left:hover,
+.zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-right:hover,
+.zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-left:hover,
+.zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-right:hover,
+.zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-left:hover,
+.zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-right:hover,
+.zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-left:hover,
+.zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-right:hover,
+.zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-left:hover,
+.zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-right:hover {
+    background: #ebebeb
+}
+
+.zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 svg,
+.zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 svg,
+.zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 svg,
+.zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 svg,
+.zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 svg,
+.zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 svg,
+.zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 svg,
+.zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 svg {
+    fill: #5981A9
+}
+
+.zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-01 .zpcarousel-arrow-left svg,
+.zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-01 .zpcarousel-arrow-right svg,
+.zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-01 .zpcarousel-arrow-left svg,
+.zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-01 .zpcarousel-arrow-right svg,
+.zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-01 .zpcarousel-arrow-left svg,
+.zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-01 .zpcarousel-arrow-right svg,
+.zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-01 .zpcarousel-arrow-left svg,
+.zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-01 .zpcarousel-arrow-right svg {
+    fill: RGBA(89, 129, 169, 0.8)
+}
+
+.zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-01 .zpcarousel-controller,
+.zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-02 .zpcarousel-controller,
+.zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-03 .zpcarousel-controller,
+.zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-04 .zpcarousel-controller {
+    background: transparent;
+    border-color: #c1c1c1
+}
+
+.zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-01 .zpcarousel-controller:hover,
+.zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-01 .zpcarousel-controller.zpcarousel-controller-active,
+.zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-02 .zpcarousel-controller:hover,
+.zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-02 .zpcarousel-controller.zpcarousel-controller-active,
+.zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-03 .zpcarousel-controller:hover,
+.zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-03 .zpcarousel-controller.zpcarousel-controller-active,
+.zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-04 .zpcarousel-controller:hover,
+.zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-04 .zpcarousel-controller.zpcarousel-controller-active {
+    background: #c1c1c1;
+    border-color: #c1c1c1
+}
+
+.zpdark-section .zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-left,
+.zpdark-section .zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-right,
+.zpdark-section .zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-left,
+.zpdark-section .zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-right,
+.zpdark-section .zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-left,
+.zpdark-section .zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-right,
+.zpdark-section .zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-left,
+.zpdark-section .zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-right,
+.zpdark-section .zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-left,
+.zpdark-section .zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-right,
+.zpdark-section .zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-left,
+.zpdark-section .zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-right,
+.zpdark-section .zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-left,
+.zpdark-section .zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-right,
+.zpdark-section .zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-left,
+.zpdark-section .zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-right {
+    background: RGBA(255, 255, 255, 0.3)
+}
+
+.zpdark-section .zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-left:hover,
+.zpdark-section .zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-right:hover,
+.zpdark-section .zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-left:hover,
+.zpdark-section .zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-right:hover,
+.zpdark-section .zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-left:hover,
+.zpdark-section .zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-right:hover,
+.zpdark-section .zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-left:hover,
+.zpdark-section .zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-right:hover,
+.zpdark-section .zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-left:hover,
+.zpdark-section .zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-right:hover,
+.zpdark-section .zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-left:hover,
+.zpdark-section .zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-right:hover,
+.zpdark-section .zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-left:hover,
+.zpdark-section .zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 .zpcarousel-arrow-right:hover,
+.zpdark-section .zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-left:hover,
+.zpdark-section .zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 .zpcarousel-arrow-right:hover {
+    background: RGBA(255, 255, 255, 0.3)
+}
+
+.zpdark-section .zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 svg,
+.zpdark-section .zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 svg,
+.zpdark-section .zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 svg,
+.zpdark-section .zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 svg,
+.zpdark-section .zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 svg,
+.zpdark-section .zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 svg,
+.zpdark-section .zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-02 svg,
+.zpdark-section .zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-03 svg {
+    fill: #5981A9
+}
+
+.zpdark-section .zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-01 .zpcarousel-arrow-left svg,
+.zpdark-section .zpcarousel-container.zpcarousel-style-01 .zpcarousel-arrows-container.zpcarousel-arrow-type-01 .zpcarousel-arrow-right svg,
+.zpdark-section .zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-01 .zpcarousel-arrow-left svg,
+.zpdark-section .zpcarousel-container.zpcarousel-style-02 .zpcarousel-arrows-container.zpcarousel-arrow-type-01 .zpcarousel-arrow-right svg,
+.zpdark-section .zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-01 .zpcarousel-arrow-left svg,
+.zpdark-section .zpcarousel-container.zpcarousel-style-03 .zpcarousel-arrows-container.zpcarousel-arrow-type-01 .zpcarousel-arrow-right svg,
+.zpdark-section .zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-01 .zpcarousel-arrow-left svg,
+.zpdark-section .zpcarousel-container.zpcarousel-style-04 .zpcarousel-arrows-container.zpcarousel-arrow-type-01 .zpcarousel-arrow-right svg {
+    fill: #ffffff
+}
+
+.zpdark-section .zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-01 .zpcarousel-controller,
+.zpdark-section .zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-02 .zpcarousel-controller,
+.zpdark-section .zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-03 .zpcarousel-controller,
+.zpdark-section .zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-04 .zpcarousel-controller {
+    background: transparent;
+    border-color: white
+}
+
+.zpdark-section .zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-01 .zpcarousel-controller:hover,
+.zpdark-section .zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-01 .zpcarousel-controller.zpcarousel-controller-active,
+.zpdark-section .zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-02 .zpcarousel-controller:hover,
+.zpdark-section .zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-02 .zpcarousel-controller.zpcarousel-controller-active,
+.zpdark-section .zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-03 .zpcarousel-controller:hover,
+.zpdark-section .zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-03 .zpcarousel-controller.zpcarousel-controller-active,
+.zpdark-section .zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-04 .zpcarousel-controller:hover,
+.zpdark-section .zpcarousel-container .zpcarousel-controller-container.zpcarousel-controller-type-04 .zpcarousel-controller.zpcarousel-controller-active {
+    background: #ffffff;
+    border-color: #ffffff
+}
+
+.zpaccordion-container.zpaccordion-style-01 .zpaccordion {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpaccordion-container.zpaccordion-style-02 .zpaccordion {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpaccordion-container.zpaccordion-style-01 .zpaccordion {
+    border-width: 1px;
+    border-style: solid
+}
+
+.zpaccordion-container.zpaccordion-style-01 .zpaccordion.zpaccordion-active {
+    border-block-end-width: 2px
+}
+
+.zpaccordion-container.zpaccordion-style-01 .zpaccordion-content {
+    border-width: 1px;
+    border-style: solid;
+    border-block-end: 0px
+}
+
+.zpaccordion-container.zpaccordion-style-01 .zpaccordion-content:last-of-type {
+    border-block-end-width: 1px;
+    border-block-end-style: solid
+}
+
+.zpdark-section .zpaccordion-container.zpaccordion-style-01 .zpaccordion {
+    border: 0px;
+    border-block-start: 1px solid RGBA(255, 255, 255, 0.24)
+}
+
+.zpdark-section .zpaccordion-container.zpaccordion-style-01 .zpaccordion-content {
+    border: 0px !important
+}
+
+.zpaccordion-container.zpaccordion-style-01 .zpaccordion {
+    background: #ffffff;
+    color: #00376E;
+    margin-block-end: 0px;
+    border-color: #E7E7E7
+}
+
+.zpaccordion-container.zpaccordion-style-01 .zpaccordion.zpaccordion-active {
+    background: #ffffff;
+    color: #00376E;
+    border-block-end: 1px solid;
+    border-block-end-color: #4CB5AB
+}
+
+@media all and (min-width: 992px) {
+    .zpaccordion-container.zpaccordion-style-01 .zpaccordion:hover {
+        background: #ffffff;
+        color: #00376E
+    }
+}
+
+.zpaccordion-container.zpaccordion-style-01 .zpaccordion-content {
+    margin-block-end: 0px;
+    border-inline-start: 1px solid #E7E7E7;
+    border-inline-end: 1px solid #E7E7E7;
+    background: #ffffff;
+    border-block-start-color: transparent
+}
+
+.zpaccordion-container.zpaccordion-style-01 .zpaccordion-content:last-of-type {
+    border-block-end-color: #E7E7E7
+}
+
+.zpaccordion-container.zpaccordion-style-02 .zpaccordion {
+    color: #00376E
+}
+
+.zpaccordion-container.zpaccordion-style-02 .zpaccordion.zpaccordion-active {
+    color: #00376E
+}
+
+@media all and (min-width: 992px) {
+    .zpaccordion-container.zpaccordion-style-02 .zpaccordion:hover {
+        color: #00376E
+    }
+}
+
+.zpdark-section .zpaccordion-container.zpaccordion-style-01 .zpaccordion {
+    background: RGBA(255, 255, 255, 0.24);
+    color: #ffffff;
+    margin-block-end: 0px;
+    border-color: RGBA(255, 255, 255, 0.25)
+}
+
+.zpdark-section .zpaccordion-container.zpaccordion-style-01 .zpaccordion.zpaccordion-active {
+    background: #ffffff;
+    color: #00376E;
+    border-block-end: 1px solid;
+    border-block-end-color: #ffffff
+}
+
+@media all and (min-width: 992px) {
+    .zpdark-section .zpaccordion-container.zpaccordion-style-01 .zpaccordion:hover {
+        background: #ffffff;
+        color: #00376E
+    }
+}
+
+.zpdark-section .zpaccordion-container.zpaccordion-style-01 .zpaccordion-content {
+    margin-block-end: 0px;
+    border-inline-start: 1px solid RGBA(255, 255, 255, 0.25);
+    border-inline-end: 1px solid RGBA(255, 255, 255, 0.25);
+    background: RGBA(255, 255, 255, 0.24);
+    border-block-start-color: transparent
+}
+
+.zpdark-section .zpaccordion-container.zpaccordion-style-01 .zpaccordion-content:last-of-type {
+    border-block-end-color: RGBA(255, 255, 255, 0.25)
+}
+
+.zpdark-section .zpaccordion-container.zpaccordion-style-02 .zpaccordion {
+    color: #ffffff
+}
+
+.zpdark-section .zpaccordion-container.zpaccordion-style-02 .zpaccordion.zpaccordion-active {
+    color: #ffffff
+}
+
+@media all and (min-width: 992px) {
+    .zpdark-section .zpaccordion-container.zpaccordion-style-02 .zpaccordion:hover {
+        color: #ffffff
+    }
+}
+
+.zpform-container input[type='text'],
+.zpform-container input[type='email'],
+.zpform-container input[type='date'],
+.zpform-container input[type="file"],
+.zpform-container textarea,
+.zpform-container select {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: normal
+}
+
+.zpform-container label {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: normal;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpform-container h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    text-transform: none;
+    font-weight: normal;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpform-container .zpbutton.zpbutton-type-primary.zpbutton-size-md {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    border-width: 0;
+    border-style: none;
+    line-height: 1.42857143;
+    letter-spacing: normal
+}
+
+.zpform-container .zpbutton.zpbutton-type-primary.zpbutton-size-sm {
+    font-size: 13px
+}
+
+.zpform-container .zpbutton.zpbutton-type-primary.zpbutton-size-lg {
+    font-size: 18px
+}
+
+.zpform-container .zpbutton.zpbutton-type-secondary {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    border-width: 0;
+    border-style: none;
+    line-height: 1.42857143;
+    letter-spacing: normal
+}
+
+.zpform-container .zpbutton.zpbutton-type-secondary.zpbutton-size-sm {
+    font-size: 13px
+}
+
+.zpform-container .zpbutton.zpbutton-type-secondary.zpbutton-size-lg {
+    font-size: 18px
+}
+
+.zpform-container input[type='text'],
+.zpform-container input[type='email'],
+.zpform-container input[type='date'],
+.zpform-container input[type="file"],
+.zpform-container textarea,
+.zpform-container select {
+    background: #ffffff;
+    border-color: #E7E7E7;
+    color: #5981A9
+}
+
+.zpform-container input[type='text']:focus,
+.zpform-container input[type='email']:focus,
+.zpform-container input[type='date']:focus,
+.zpform-container input[type="file"]:focus,
+.zpform-container textarea:focus,
+.zpform-container select:focus {
+    border-color: #5981A9
+}
+
+.zpform-container input[type="file"] {
+    background: transparent
+}
+
+.zpform-container input::-webkit-input-placeholder,
+.zpform-container textarea::-webkit-input-placeholder,
+.zpform-container select::-webkit-input-placeholder {
+    color: RGBA(89, 129, 169, 0.5)
+}
+
+.zpform-container input::-moz-placeholder,
+.zpform-container textarea::-moz-placeholder,
+.zpform-container select::-moz-placeholder {
+    color: RGBA(89, 129, 169, 0.5)
+}
+
+.zpform-container input:-ms-input-placeholder,
+.zpform-container textarea:-ms-input-placeholder,
+.zpform-container select:-ms-input-placeholder {
+    color: RGBA(89, 129, 169, 0.5)
+}
+
+.zpform-container .zpform-errormsg,
+.zpform-container .zpform-common-errormsg {
+    color: #FF4949
+}
+
+.zpform-container .zpform-common-successmsg {
+    color: #13CE66
+}
+
+.zpform-container .zpform-mandatory:after {
+    color: #FF4949
+}
+
+.zpform-container label {
+    color: #5981A9
+}
+
+.zpform-container h2 {
+    color: #00376E
+}
+
+.zpform-container .zpbutton.zpbutton-type-primary {
+    background-color: #4CB5AB;
+    color: #ffffff;
+    border-color: transparent
+}
+
+.zpform-container .zpbutton.zpbutton-type-primary:hover {
+    background-color: #3c928a;
+    color: #ffffff;
+    border-color: transparent
+}
+
+.zpform-container .zpbutton.zpbutton-type-secondary {
+    background-color: #00376E;
+    color: #ffffff;
+    border-color: transparent
+}
+
+.zpform-container .zpbutton.zpbutton-type-secondary:hover {
+    background-color: #001e3b;
+    color: #ffffff;
+    border-color: transparent
+}
+
+.zpdark-section .zpform-container input[type='text'],
+.zpdark-section .zpform-container input[type='email'],
+.zpdark-section .zpform-container input[type='date'],
+.zpdark-section .zpform-container input[type="file"],
+.zpdark-section .zpform-container textarea,
+.zpdark-section .zpform-container select {
+    background: transparent;
+    border-color: RGBA(255, 255, 255, 0.5);
+    color: #ffffff
+}
+
+.zpdark-section .zpform-container input[type='text']:focus,
+.zpdark-section .zpform-container input[type='email']:focus,
+.zpdark-section .zpform-container input[type='date']:focus,
+.zpdark-section .zpform-container input[type="file"]:focus,
+.zpdark-section .zpform-container textarea:focus,
+.zpdark-section .zpform-container select:focus {
+    border-color: #ffffff
+}
+
+.zpdark-section .zpform-container input[type="file"] {
+    background: transparent
+}
+
+.zpdark-section .zpform-container input::-webkit-input-placeholder,
+.zpdark-section .zpform-container textarea::-webkit-input-placeholder,
+.zpdark-section .zpform-container select::-webkit-input-placeholder {
+    color: RGBA(255, 255, 255, 0.5)
+}
+
+.zpdark-section .zpform-container input::-moz-placeholder,
+.zpdark-section .zpform-container textarea::-moz-placeholder,
+.zpdark-section .zpform-container select::-moz-placeholder {
+    color: RGBA(255, 255, 255, 0.5)
+}
+
+.zpdark-section .zpform-container input:-ms-input-placeholder,
+.zpdark-section .zpform-container textarea:-ms-input-placeholder,
+.zpdark-section .zpform-container select:-ms-input-placeholder {
+    color: RGBA(255, 255, 255, 0.5)
+}
+
+.zpdark-section .zpform-container .zpform-errormsg,
+.zpdark-section .zpform-container .zpform-common-errormsg {
+    color: #ffffff
+}
+
+.zpdark-section .zpform-container .zpform-common-successmsg {
+    color: #ffffff
+}
+
+.zpdark-section .zpform-container .zpform-mandatory:after {
+    color: #ffffff
+}
+
+.zpdark-section .zpform-container label {
+    color: #ffffff
+}
+
+.zpdark-section .zpform-container h2 {
+    color: #ffffff
+}
+
+.zpdark-section .zpform-container .zpbutton.zpbutton-type-primary {
+    background-color: #ffffff;
+    color: #4CB5AB;
+    border-color: transparent
+}
+
+.zpdark-section .zpform-container .zpbutton.zpbutton-type-primary:hover {
+    background-color: #e6e6e6;
+    color: #4CB5AB;
+    border-color: transparent
+}
+
+.zpdark-section .zpform-container .zpbutton.zpbutton-type-secondary {
+    background-color: #00376E;
+    color: #ffffff;
+    border-color: transparent
+}
+
+.zpdark-section .zpform-container .zpbutton.zpbutton-type-secondary:hover {
+    background-color: #001e3b;
+    color: #ffffff;
+    border-color: transparent
+}
+
+.zpimage-container[class*='zpimage-overlay-effect-'] figure figcaption,
+.zpimage-with-text-container[class*='zpimage-overlay-effect-'] figure figcaption {
+    background: RGBA(76, 181, 171, 0.8);
+    color: #ffffff
+}
+
+.zpimage-container[class*='zpimage-overlay-effect-'] figure:hover figcaption,
+.zpimage-with-text-container[class*='zpimage-overlay-effect-'] figure:hover figcaption {
+    background: RGBA(76, 181, 171, 0.8);
+    color: #ffffff
+}
+
+.zpimage-container[class*='zpimage-overlay-effect-static-'] figure figcaption,
+.zpimage-with-text-container[class*='zpimage-overlay-effect-static-'] figure figcaption {
+    background: RGBA(76, 181, 171, 0.8);
+    color: #ffffff
+}
+
+.hb-grid-gallery[class*='zpimage-overlay-effect-hv-'] figure:hover figcaption {
+    background: RGBA(76, 181, 171, 0.8);
+    color: #ffffff
+}
+
+[data-caption_style="hv-3"] figcaption,
+.hv-3 figcaption {
+    background: linear-gradient(to bottom, RGBA(255, 255, 255, 0) 0%, RGBA(76, 181, 171, 0.4) 80%)
+}
+
+.zpdark-section .zpimage-container[class*='zpimage-overlay-effect-'] figure figcaption,
+.zpdark-section .zpimage-with-text-container[class*='zpimage-overlay-effect-'] figure figcaption {
+    background: RGBA(0, 55, 110, 0.5);
+    color: #ffffff
+}
+
+.zpdark-section .zpimage-container[class*='zpimage-overlay-effect-'] figure:hover figcaption,
+.zpdark-section .zpimage-with-text-container[class*='zpimage-overlay-effect-'] figure:hover figcaption {
+    background: RGBA(0, 55, 110, 0.5);
+    color: #ffffff
+}
+
+.zpdark-section .zpimage-container[class*='zpimage-overlay-effect-static-'] figure figcaption,
+.zpdark-section .zpimage-with-text-container[class*='zpimage-overlay-effect-static-'] figure figcaption {
+    background: RGBA(0, 55, 110, 0.5);
+    color: #ffffff
+}
+
+.zpdark-section .hb-grid-gallery[class*='zpimage-overlay-effect-hv-'] figure:hover figcaption {
+    background: RGBA(0, 55, 110, 0.5);
+    color: #ffffff
+}
+
+.zpdark-section [data-caption_style="hv-3"] figcaption,
+.hv-3 figcaption {
+    background: linear-gradient(to bottom, RGBA(255, 255, 255, 0) 0%, RGBA(0, 55, 110, 0.4) 80%)
+}
+
+.zptable table td,
+.zptable table th {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: normal;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zptable {
+    border-color: #E7E7E7
+}
+
+.zptable table td,
+.zptable table th {
+    border-block-end-color: #E7E7E7;
+    border-inline-end-color: #E7E7E7;
+    color: #00376E
+}
+
+.zptable table td {
+    color: #5981A9
+}
+
+.zptable.zptable-header-dark table tr th {
+    background: #00376E;
+    color: #ffffff;
+    border-inline-end-color: #0051a1;
+    border-block-end-color: #0051a1
+}
+
+.zptable.zptable-header-light table tr th {
+    background: #F4FAFA;
+    color: #00376E;
+    border-inline-end-color: #E7E7E7;
+    border-block-end-color: #E7E7E7
+}
+
+.zptable.zptable-header-transparent table tr th {
+    color: #00376E;
+    border-inline-end-color: #E7E7E7;
+    border-block-end-color: #E7E7E7
+}
+
+.zptable.zptable-zebra-style-row:not(.zptable-header-top):not(.zptable-header-both) tr:nth-child(even) td,
+.zptable.zptable-zebra-style-row.zptable-header-top tr:nth-child(odd) td,
+.zptable.zptable-zebra-style-row.zptable-header-both tr:nth-child(odd) td {
+    background: #F4FAFA
+}
+
+.zptable.zptable-zebra-style-row:not(.zptable-header-top):not(.zptable-header-both) tr:nth-child(odd) td,
+.zptable.zptable-zebra-style-row.zptable-header-top tr:nth-child(even) td,
+.zptable.zptable-zebra-style-row.zptable-header-both tr:nth-child(even) td {
+    background: transparent
+}
+
+.zptable.zptable-zebra-style-column:not(.zptable-header-left):not(.zptable-header-both) td:nth-child(even),
+.zptable.zptable-zebra-style-column.zptable-header-left td:nth-child(odd),
+.zptable.zptable-zebra-style-column.zptable-header-both td:nth-child(odd) {
+    background: #F4FAFA
+}
+
+.zptable.zptable-zebra-style-column:not(.zptable-header-left):not(.zptable-header-both) td:nth-child(odd),
+.zptable.zptable-zebra-style-column.zptable-header-left td:nth-child(even),
+.zptable.zptable-zebra-style-column.zptable-header-both td:nth-child(even) {
+    background: transparent
+}
+
+.zpdark-section .zptable {
+    border-color: RGBA(231, 231, 231, 0.6)
+}
+
+.zpdark-section .zptable table td,
+.zpdark-section .zptable table th {
+    border-block-end-color: RGBA(231, 231, 231, 0.6);
+    border-inline-end-color: RGBA(231, 231, 231, 0.6);
+    color: #ffffff
+}
+
+.zpdark-section .zptable table td {
+    color: #ffffff
+}
+
+.zpdark-section .zptable.zptable-header-dark table tr th {
+    background: #00376E;
+    color: #ffffff;
+    border-inline-end-color: #0051a1;
+    border-block-end-color: #0051a1
+}
+
+.zpdark-section .zptable.zptable-header-light table tr th {
+    background: #F4FAFA;
+    color: #00376E;
+    border-inline-end-color: RGBA(231, 231, 231, 0.6);
+    border-block-end-color: RGBA(231, 231, 231, 0.6)
+}
+
+.zpdark-section .zptable.zptable-header-transparent table tr th {
+    color: #ffffff;
+    border-inline-end-color: RGBA(231, 231, 231, 0.6);
+    border-block-end-color: RGBA(231, 231, 231, 0.6)
+}
+
+.zpdark-section .zptable.zptable-zebra-style-row:not(.zptable-header-top):not(.zptable-header-both) tr:nth-child(even) td,
+.zpdark-section .zptable.zptable-zebra-style-row.zptable-header-top tr:nth-child(odd) td,
+.zpdark-section .zptable.zptable-zebra-style-row.zptable-header-both tr:nth-child(odd) td {
+    background: #398b83
+}
+
+.zpdark-section .zptable.zptable-zebra-style-row:not(.zptable-header-top):not(.zptable-header-both) tr:nth-child(odd) td,
+.zpdark-section .zptable.zptable-zebra-style-row.zptable-header-top tr:nth-child(even) td,
+.zpdark-section .zptable.zptable-zebra-style-row.zptable-header-both tr:nth-child(even) td {
+    background: transparent
+}
+
+.zpdark-section .zptable.zptable-zebra-style-column:not(.zptable-header-left):not(.zptable-header-both) td:nth-child(even),
+.zpdark-section .zptable.zptable-zebra-style-column.zptable-header-left td:nth-child(odd),
+.zpdark-section .zptable.zptable-zebra-style-column.zptable-header-both td:nth-child(odd) {
+    background: #398b83
+}
+
+.zpdark-section .zptable.zptable-zebra-style-column:not(.zptable-header-left):not(.zptable-header-both) td:nth-child(odd),
+.zpdark-section .zptable.zptable-zebra-style-column.zptable-header-left td:nth-child(even),
+.zpdark-section .zptable.zptable-zebra-style-column.zptable-header-both td:nth-child(even) {
+    background: transparent
+}
+
+.zplight-section .zptable.zptable-zebra-style-row:not(.zptable-header-top):not(.zptable-header-both) tr:nth-child(even) td,
+.zplight-section .zptable.zptable-zebra-style-row.zptable-header-top tr:nth-child(odd) td,
+.zplight-section .zptable.zptable-zebra-style-row.zptable-header-both tr:nth-child(odd) td {
+    background: #ffffff
+}
+
+.zplight-section .zptable.zptable-zebra-style-row:not(.zptable-header-top):not(.zptable-header-both) tr:nth-child(odd) td,
+.zplight-section .zptable.zptable-zebra-style-row.zptable-header-top tr:nth-child(even) td,
+.zplight-section .zptable.zptable-zebra-style-row.zptable-header-both tr:nth-child(even) td {
+    background: transparent
+}
+
+.zplight-section .zptable.zptable-zebra-style-column:not(.zptable-header-left):not(.zptable-header-both) td:nth-child(even),
+.zplight-section .zptable.zptable-zebra-style-column.zptable-header-left td:nth-child(odd),
+.zplight-section .zptable.zptable-zebra-style-column.zptable-header-both td:nth-child(odd) {
+    background: #ffffff
+}
+
+.zplight-section .zptable.zptable-zebra-style-column:not(.zptable-header-left):not(.zptable-header-both) td:nth-child(odd),
+.zplight-section .zptable.zptable-zebra-style-column.zptable-header-left td:nth-child(even),
+.zplight-section .zptable.zptable-zebra-style-column.zptable-header-both td:nth-child(even) {
+    background: transparent
+}
+
+.zpelem-box {
+    padding: 0px;
+    border-width: 0px;
+    border-style: solid
+}
+
+.zpelem-box {
+    background-color: transparent;
+    border-color: transparent
+}
+
+.zpdark-section .zpelem-box {
+    background-color: transparent;
+    border-color: transparent
+}
+
+.zpelem-iconheading h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-iconheading h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-iconheading h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-iconheading h4 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-iconheading h5 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-iconheading h6 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-iconheading .zpicon-common svg {
+    fill: #4CB5AB
+}
+
+.zpelem-iconheading .zpicon-common.zpicon-style-bgfill,
+.zpelem-iconheading .zpicon-common.zpicon-style-circle-fill,
+.zpelem-iconheading .zpicon-common.zpicon-style-roundcorner-fill {
+    background: #4CB5AB
+}
+
+.zpelem-iconheading .zpicon-common.zpicon-style-bgfill svg,
+.zpelem-iconheading .zpicon-common.zpicon-style-circle-fill svg,
+.zpelem-iconheading .zpicon-common.zpicon-style-roundcorner-fill svg {
+    fill: #ffffff
+}
+
+.zpelem-iconheading .zpicon-common.zpicon-style-border,
+.zpelem-iconheading .zpicon-common.zpicon-style-circle,
+.zpelem-iconheading .zpicon-common.zpicon-style-roundcorner {
+    border-color: #E7E7E7
+}
+
+.zpelem-iconheading .zpicon-common.zpicon-style-border svg,
+.zpelem-iconheading .zpicon-common.zpicon-style-circle svg,
+.zpelem-iconheading .zpicon-common.zpicon-style-roundcorner svg {
+    fill: #4CB5AB
+}
+
+.zpdark-section .zpelem-iconheading .zpicon-common svg {
+    fill: #ffffff
+}
+
+.zpdark-section .zpelem-iconheading .zpicon-common.zpicon-style-bgfill,
+.zpdark-section .zpelem-iconheading .zpicon-common.zpicon-style-circle-fill,
+.zpdark-section .zpelem-iconheading .zpicon-common.zpicon-style-roundcorner-fill {
+    background: #ffffff
+}
+
+.zpdark-section .zpelem-iconheading .zpicon-common.zpicon-style-bgfill svg,
+.zpdark-section .zpelem-iconheading .zpicon-common.zpicon-style-circle-fill svg,
+.zpdark-section .zpelem-iconheading .zpicon-common.zpicon-style-roundcorner-fill svg {
+    fill: #4CB5AB
+}
+
+.zpdark-section .zpelem-iconheading .zpicon-common.zpicon-style-border,
+.zpdark-section .zpelem-iconheading .zpicon-common.zpicon-style-circle,
+.zpdark-section .zpelem-iconheading .zpicon-common.zpicon-style-roundcorner {
+    border-color: #ffffff
+}
+
+.zpdark-section .zpelem-iconheading .zpicon-common.zpicon-style-border svg,
+.zpdark-section .zpelem-iconheading .zpicon-common.zpicon-style-circle svg,
+.zpdark-section .zpelem-iconheading .zpicon-common.zpicon-style-roundcorner svg {
+    fill: #ffffff
+}
+
+.zpelem-iconheading h1 {
+    color: #00376E
+}
+
+.zpelem-iconheading h2 {
+    color: #00376E
+}
+
+.zpelem-iconheading h3 {
+    color: #00376E
+}
+
+.zpelem-iconheading h4 {
+    color: #00376E
+}
+
+.zpelem-iconheading h5 {
+    color: #00376E
+}
+
+.zpelem-iconheading h6 {
+    color: #00376E
+}
+
+.zpdark-section .zpelem-iconheading h1 {
+    color: #ffffff
+}
+
+.zpdark-section .zpelem-iconheading h2 {
+    color: #ffffff
+}
+
+.zpdark-section .zpelem-iconheading h3 {
+    color: #ffffff
+}
+
+.zpdark-section .zpelem-iconheading h4 {
+    color: #ffffff
+}
+
+.zpdark-section .zpelem-iconheading h5 {
+    color: #ffffff
+}
+
+.zpdark-section .zpelem-iconheading h6 {
+    color: #ffffff
+}
+
+.zpelem-iconheadingtext {
+    color: #5981A9;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-iconheadingtext h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-iconheadingtext h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-iconheadingtext h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-iconheadingtext h4 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-iconheadingtext h5 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-iconheadingtext h6 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-iconheadingtext .zpicon-common svg {
+    fill: #4CB5AB
+}
+
+.zpelem-iconheadingtext .zpicon-common.zpicon-style-bgfill,
+.zpelem-iconheadingtext .zpicon-common.zpicon-style-circle-fill,
+.zpelem-iconheadingtext .zpicon-common.zpicon-style-roundcorner-fill {
+    background: #4CB5AB
+}
+
+.zpelem-iconheadingtext .zpicon-common.zpicon-style-bgfill svg,
+.zpelem-iconheadingtext .zpicon-common.zpicon-style-circle-fill svg,
+.zpelem-iconheadingtext .zpicon-common.zpicon-style-roundcorner-fill svg {
+    fill: #ffffff
+}
+
+.zpelem-iconheadingtext .zpicon-common.zpicon-style-border,
+.zpelem-iconheadingtext .zpicon-common.zpicon-style-circle,
+.zpelem-iconheadingtext .zpicon-common.zpicon-style-roundcorner {
+    border-color: #E7E7E7
+}
+
+.zpelem-iconheadingtext .zpicon-common.zpicon-style-border svg,
+.zpelem-iconheadingtext .zpicon-common.zpicon-style-circle svg,
+.zpelem-iconheadingtext .zpicon-common.zpicon-style-roundcorner svg {
+    fill: #4CB5AB
+}
+
+.zpdark-section .zpelem-iconheadingtext .zpicon-common svg {
+    fill: #ffffff
+}
+
+.zpdark-section .zpelem-iconheadingtext .zpicon-common.zpicon-style-bgfill,
+.zpdark-section .zpelem-iconheadingtext .zpicon-common.zpicon-style-circle-fill,
+.zpdark-section .zpelem-iconheadingtext .zpicon-common.zpicon-style-roundcorner-fill {
+    background: #ffffff
+}
+
+.zpdark-section .zpelem-iconheadingtext .zpicon-common.zpicon-style-bgfill svg,
+.zpdark-section .zpelem-iconheadingtext .zpicon-common.zpicon-style-circle-fill svg,
+.zpdark-section .zpelem-iconheadingtext .zpicon-common.zpicon-style-roundcorner-fill svg {
+    fill: #4CB5AB
+}
+
+.zpdark-section .zpelem-iconheadingtext .zpicon-common.zpicon-style-border,
+.zpdark-section .zpelem-iconheadingtext .zpicon-common.zpicon-style-circle,
+.zpdark-section .zpelem-iconheadingtext .zpicon-common.zpicon-style-roundcorner {
+    border-color: #ffffff
+}
+
+.zpdark-section .zpelem-iconheadingtext .zpicon-common.zpicon-style-border svg,
+.zpdark-section .zpelem-iconheadingtext .zpicon-common.zpicon-style-circle svg,
+.zpdark-section .zpelem-iconheadingtext .zpicon-common.zpicon-style-roundcorner svg {
+    fill: #ffffff
+}
+
+.zpelem-iconheadingtext {
+    color: #5981A9
+}
+
+.zpelem-iconheadingtext h1 {
+    color: #00376E
+}
+
+.zpelem-iconheadingtext h2 {
+    color: #00376E
+}
+
+.zpelem-iconheadingtext h3 {
+    color: #00376E
+}
+
+.zpelem-iconheadingtext h4 {
+    color: #00376E
+}
+
+.zpelem-iconheadingtext h5 {
+    color: #00376E
+}
+
+.zpelem-iconheadingtext h6 {
+    color: #00376E
+}
+
+.zpdark-section .zpelem-iconheadingtext {
+    color: #ffffff
+}
+
+.zpdark-section .zpelem-iconheadingtext h1 {
+    color: #ffffff
+}
+
+.zpdark-section .zpelem-iconheadingtext h2 {
+    color: #ffffff
+}
+
+.zpdark-section .zpelem-iconheadingtext h3 {
+    color: #ffffff
+}
+
+.zpdark-section .zpelem-iconheadingtext h4 {
+    color: #ffffff
+}
+
+.zpdark-section .zpelem-iconheadingtext h5 {
+    color: #ffffff
+}
+
+.zpdark-section .zpelem-iconheadingtext h6 {
+    color: #ffffff
+}
+
+.zpelem-imagetext .zpimage-text {
+    color: #5981A9;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-imagetext .zpimage-text {
+    color: #5981A9
+}
+
+.zpdark-section .zpelem-imagetext .zpimage-text {
+    color: #ffffff
+}
+
+.zpelem-imageheadingtext h1.zpimage-heading {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-imageheadingtext h2.zpimage-heading {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-imageheadingtext h3.zpimage-heading {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-imageheadingtext h4.zpimage-heading {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-imageheadingtext h5.zpimage-heading {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-imageheadingtext h6.zpimage-heading {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    color: #00376E;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-imageheadingtext .zpimage-text {
+    color: #5981A9;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 1.8;
+    letter-spacing: normal
+}
+
+.zpelem-imageheadingtext .zpimage-text {
+    color: #5981A9
+}
+
+.zpelem-imageheadingtext h1.zpimage-heading {
+    color: #00376E
+}
+
+.zpelem-imageheadingtext h2.zpimage-heading {
+    color: #00376E
+}
+
+.zpelem-imageheadingtext h3.zpimage-heading {
+    color: #00376E
+}
+
+.zpelem-imageheadingtext h4.zpimage-heading {
+    color: #00376E
+}
+
+.zpelem-imageheadingtext h5.zpimage-heading {
+    color: #00376E
+}
+
+.zpelem-imageheadingtext h6.zpimage-heading {
+    color: #00376E
+}
+
+.zpdark-section .zpelem-imageheadingtext .zpimage-text {
+    color: #ffffff
+}
+
+.zpdark-section .zpelem-imageheadingtext h1.zpimage-heading {
+    color: #ffffff
+}
+
+.zpdark-section .zpelem-imageheadingtext h2.zpimage-heading {
+    color: #ffffff
+}
+
+.zpdark-section .zpelem-imageheadingtext h3.zpimage-heading {
+    color: #ffffff
+}
+
+.zpdark-section .zpelem-imageheadingtext h4.zpimage-heading {
+    color: #ffffff
+}
+
+.zpdark-section .zpelem-imageheadingtext h5.zpimage-heading {
+    color: #ffffff
+}
+
+.zpdark-section .zpelem-imageheadingtext h6.zpimage-heading {
+    color: #ffffff
+}
+
+/* .zpdark-section-bg {
+    background-color: #4CB5AB
+} */
+
+.zplight-section-bg {
+    background-color: #F4FAFA
+}
+
+.theme-footer-area {
+    background-color: #00376E
+}
+
+.modal-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    backface-visibility: hidden;
+    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1)
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible
+}
+
+.modal-container {
+    width: 600px;
+    border: 5px solid #4CB5AB;
+    background-color: #f5f8fa;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 70px;
+    padding-inline: 30px;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+    transform: scale(1.2);
+    transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1)
+}
+
+.modal-container.active {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1)
+}
+
+.modal-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.modal-figure {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7ecf0;
+    border-radius: 50%
+}
+
+.lpmodal-title {
+    font-size: 30px;
+    font-weight: normal;
+    color: #4CB5AB;
+    line-height: 1.8;
+    margin-block-start: 25px;
+    margin-inline: 0;
+    margin-block-end: 15px
+}
+
+.lpmodal-caption {
+    font-size: 16px;
+    color: #606060;
+    margin-block-end: 30px;
+    text-align: center;
+    line-height: 22px
+}
+
+.lpclose-btn {
+    padding-block: 12px;
+    padding-inline: 40px;
+    border-radius: 5px;
+    background-color: #4CB5AB;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    outline: 0
+}
+
+.inbox-icon {
+    color: #4CB5AB
+}
+
+.zpcountdown-inner-container .countdown-box .countdown-no {
+    color: #4CB5AB
+}
+
+.zpcountdown-inner-container .countdown-box .countdown-title {
+    color: #5981A9
+}
+
+.zpcountdown-inner-container.is-squared .countdown-box .countdown-no,
+.zpcountdown-inner-container.is-circled .countdown-box .countdown-no,
+.zpcountdown-inner-container.is-rounded .countdown-box .countdown-no {
+    background-color: #4CB5AB;
+    color: #ffffff
+}
+
+.zpdark-section .zpcountdown-inner-container .countdown-box .countdown-no {
+    color: #ffffff
+}
+
+.zpdark-section .zpcountdown-inner-container .countdown-box .countdown-title {
+    color: #ffffff
+}
+
+.zpdark-section .zpcountdown-inner-container.is-squared .countdown-box .countdown-no,
+.zpdark-section .zpcountdown-inner-container.is-circled .countdown-box .countdown-no,
+.zpdark-section .zpcountdown-inner-container.is-rounded .countdown-box .countdown-no {
+    background-color: #ffffff;
+    color: #4CB5AB
+}
+
+.theme-topband-container .zpsection {
+    padding-block: 24px;
+    padding-inline: 0px;
+    background: #ffffff
+}
+
+/* .theme-topband-container .zpsection.zpdark-section-bg {
+    background: #4CB5AB
+} */
+
+.theme-topband-container .theme-topband-transparent {
+    background-color: RGBA(255, 255, 255, 0.9)
+}
+
+.theme-topband-container .zpdark-section.theme-topband-transparent {
+    background-color: RGBA(76, 181, 171, 0.9)
+}
+
+.top_band-container .zpelem-image {
+    margin-block-start: 0
+}
+
+.top_band-container .zpelem-button {
+    margin-block-start: 0;
+    margin-inline-start: auto
+}
+
+.top_band-container .zpimage-container figure img {
+    width: auto;
+    height: 50px;
+    object-fit: contain
+}
+
+@media all and (max-width: 991px) and (min-width: 768px) {
+    .top_band-container [class*=zpimage-size].zpimage-tablet-fallback-fit figure img {
+        width: auto !important;
+        height: 50px !important
+    }
+}
+
+@media (max-width: 767px) {
+    .top_band-container [class*=zpimage-size].zpimage-mobile-fallback-fit figure img {
+        width: auto !important;
+        height: 50px !important
+    }
+}
+
+@media all and (min-width: 992px) {
+    .theme-topband-animate {
+        right: 0;
+        width: 100%;
+        top: 0;
+        z-index: 250;
+        position: fixed;
+        visibility: visible;
+        -webkit-animation: headerStart 0.8s linear 1 alternate;
+        -moz-animation: headerStart 0.8s linear 1 alternate;
+        -ms-animation: headerStart 0.8s linear 1 alternate;
+        -o-animation: headerStart 0.8s linear 1 alternate;
+        animation: headerStart 0.8s linear 1 alternate;
+        -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05)
+    }
+}
+
+@-webkit-keyframes headerStart {
+    from {
+        top: -300px
+    }
+}
+
+@-moz-keyframes headerStart {
+    from {
+        top: -300px
+    }
+}
+
+@-ms-keyframes headerStart {
+    from {
+        top: -300px
+    }
+}
+
+@-o-keyframes headerStart {
+    from {
+        top: -300px
+    }
+}
+
+@keyframes headerStart {
+    from {
+        top: -300px
+    }
+}

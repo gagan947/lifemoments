@@ -1,0 +1,51 @@
+.main {
+      display: flex;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+}
+
+.inner_div img {
+      height: 50px;
+      width: 100%;
+}
+
+.inner_div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      box-shadow: 0 0px 4px 5px #0060FF17;
+      height: fit-content;
+      gap: 30px;
+}
+
+.ct_input {
+      height: 38px;
+      border: 1px solid #0000004d;
+      border-radius: 6px;
+      padding-inline: 13px;
+      width: 100%;
+}
+
+.ct_blue_btn_fill {
+      background-color: #00aa3a;
+      color: #fff;
+      border-radius: 6px;
+      padding: 10px;
+      width: 100%;
+      border: 1px solid #00aa3a;
+      cursor: pointer;
+}
+
+.ct_blue_btn_fill:hover {
+      background-color: #fff;
+      color: #00aa3a;
+}
+
+.message {
+      margin-top: 100px;
+      color: #00aa3a;
+      text-align: center;
+}

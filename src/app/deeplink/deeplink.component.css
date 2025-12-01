@@ -1,0 +1,76 @@
+ .ct_mobile_w_375 {
+       max-width: 375px;
+       width: 100%;
+       margin-inline: auto;
+       /* border: 1px solid #e6e6e6; */
+       min-height: 100vh;
+ }
+
+ .ct_logo_overlay {
+       position: absolute;
+       top: 30%;
+       left: 15px;
+
+ }
+
+ .ct_logo_overlay img {
+       width: 170px;
+ }
+
+ .ct_img_h_300 {
+       width: 100%;
+       object-fit: cover;
+       height: 300px;
+ }
+
+ .ct_mobile_w_375 p {
+       color: #686868;
+       font-size: 14px;
+       font-family: "Open Sans", serif;
+       margin-top: 37px;
+       text-align: center;
+       padding-inline: 1px;
+
+ }
+
+ .ct_mt_88 {
+       margin-top: 88px;
+ }
+
+ .ct_black_btn {
+       height: 40px;
+       background-color: #000000;
+       border: 1px solid #000000;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 10px;
+       border-radius: 10px;
+       font-family: "Open Sans", serif;
+       width: 100%;
+       font-size: 14px;
+       color: #fff;
+ }
+
+ .ct_blue_btn {
+       height: 40px;
+       background-color: #4285f4;
+       border: 1px solid #4285f4;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-family: "Open Sans", serif;
+       gap: 10px;
+       border-radius: 10px;
+       font-size: 14px;
+       width: 100%;
+       color: #fff;
+ }
+
+ .ct_px_20 {
+       padding-inline: 20px;
+ }
+
+ .ct_mt_20 {
+       margin-top: 15px;
+ }
