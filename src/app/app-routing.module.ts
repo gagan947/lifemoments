@@ -9,9 +9,13 @@ import { DeleteAccountComponent } from './delete-account/delete-account.componen
 import { DeeplinkComponent } from './deeplink/deeplink.component';
 import { NoRedirectComponent } from './no-redirect/no-redirect.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { TermsofuseComponent } from './termsofuse/termsofuse.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 
 
 const routes: Routes = [
+  {path: 'termsofuse' , component:TermsofuseComponent},
+  {path:'privacypolicy', component:PrivacypolicyComponent},
   { path: 'remove-account', component: DeleteAccountComponent },
   { path: 'deeplink', component: DeeplinkComponent },
   { path: 'give-haring-a-try', component: DeeplinkComponent },

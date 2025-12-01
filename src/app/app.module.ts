@@ -16,6 +16,8 @@ import { FormsModule } from '@angular/forms';
 import { DeeplinkComponent } from './deeplink/deeplink.component';
 import { NoRedirectComponent } from './no-redirect/no-redirect.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { TermsofuseComponent } from './termsofuse/termsofuse.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,9 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     DeleteAccountComponent,
     DeeplinkComponent,
     NoRedirectComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    TermsofuseComponent,
+    PrivacypolicyComponent
   ],
   imports: [
     BrowserModule,
