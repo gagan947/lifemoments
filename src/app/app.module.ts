@@ -20,6 +20,7 @@ import { TermsofuseComponent } from './termsofuse/termsofuse.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { RouterModule } from '@angular/router';
 import { CookieConsentComponent } from './cookie-consent/cookie-consent.component';
+import { OurStoryComponent } from './our-story/our-story.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CookieConsentComponent } from './cookie-consent/cookie-consent.componen
     LandingPageComponent,
     TermsofuseComponent,
     PrivacypolicyComponent,
-    CookieConsentComponent
+    CookieConsentComponent,
+    OurStoryComponent
   ],
   imports: [
     BrowserModule,

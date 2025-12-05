@@ -11,10 +11,12 @@ import { NoRedirectComponent } from './no-redirect/no-redirect.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { TermsofuseComponent } from './termsofuse/termsofuse.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
+import { OurStoryComponent } from './our-story/our-story.component';
 
 
 const routes: Routes = [
   {path: 'termsofuse' , component:TermsofuseComponent},
+  {path : 'ourstory', component : OurStoryComponent},
   {path:'privacypolicy', component:PrivacypolicyComponent},
   { path: 'remove-account', component: DeleteAccountComponent },
   { path: 'deeplink', component: DeeplinkComponent },
