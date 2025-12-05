@@ -18,6 +18,9 @@ import { NoRedirectComponent } from './no-redirect/no-redirect.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { TermsofuseComponent } from './termsofuse/termsofuse.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
+import { RouterModule } from '@angular/router';
+import { CookieConsentComponent } from './cookie-consent/cookie-consent.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +34,8 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
     NoRedirectComponent,
     LandingPageComponent,
     TermsofuseComponent,
-    PrivacypolicyComponent
+    PrivacypolicyComponent,
+    CookieConsentComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +48,7 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
     }),
     HttpClientModule,
     FormsModule,
+    RouterModule.forRoot([], { scrollPositionRestoration: 'top' }),
   ],
   providers: [],
   bootstrap: [AppComponent]
